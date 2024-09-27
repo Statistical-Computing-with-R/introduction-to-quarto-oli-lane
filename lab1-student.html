@@ -3191,6 +3191,32 @@ vertical-align: -.125em;
 <p><strong>Question 7</strong> – Read over the <a href="https://quarto.org/docs/authoring/figures.html#computations">Quarto documentation on figure options</a> and add an option (<code>#|</code>) to the above code chunk to make the figures print side-by-side (i.e., in one row) in the rendered HTML file.</p>
 <p><strong>Question 8</strong> – Specify in the code chunk options that these boxplots should be <strong>center aligned</strong>.</p>
 <p><strong>Question 9</strong> – Specify a <strong>figure caption</strong> for the boxplots (using a code-chunk option).</p>
+<p><strong>Question 10/11</strong></p>
+</section>
+<section id="analyzing-vitamin-c-delivery-methods" class="level2">
+<h2 class="anchored" data-anchor-id="analyzing-vitamin-c-delivery-methods">Analyzing Vitamin C delivery methods</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(ToothGrowth<span class="sc">$</span>len <span class="sc">~</span> ToothGrowth<span class="sc">$</span>supp, <span class="at">var.equal =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  ToothGrowth$len by ToothGrowth$supp
+t = 1.9153, df = 55.309, p-value = 0.06063
+alternative hypothesis: true difference in means between group OJ and group VC is not equal to 0
+95 percent confidence interval:
+ -0.1710156  7.5710156
+sample estimates:
+mean in group OJ mean in group VC 
+        20.66333         16.96333 </code></pre>
+</div>
+</div>
+<p><strong>Question 12</strong></p>
+<ol type="1">
+<li>We fail to reject the null hypothesis because the p-value is 0.06, which is greater than most acceptable p-values, which are typically under 0.05.</li>
+<li>The provided confidence interval means that if we were to repeat the experiment many times, 95% of the time the difference in mean between the OJ and VC groups would fall between -0.17 and 7.57.</li>
+</ol>
+<p><strong>Question 13</strong> section header created above t test code</p>
 </section>
 </section>
 

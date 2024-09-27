@@ -83,7 +83,22 @@ Now, run this code chunk! You should see two side-by-side boxplots, one plot com
 
 **Question 9** -- Specify a **figure caption** for the boxplots (using a code-chunk option).
 
+**Question 10/11**
+
+## Analyzing Vitamin C delivery methods
+
 ```{r}
+#| echo: true
+
+t.test(ToothGrowth$len ~ ToothGrowth$supp, var.equal = FALSE)
+
 
 ```
 
+**Question 12**
+
+1.  We fail to reject the null hypothesis because the p-value is 0.06, which is greater than most acceptable p-values, which are typically under 0.05.
+2.  The provided confidence interval means that if we were to repeat the experiment many times, 95% of the time the difference in mean between the OJ and VC groups would fall between -0.17 and 7.57.
+
+**Question 13**
+section header created above t test code
