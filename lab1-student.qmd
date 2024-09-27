@@ -2,7 +2,11 @@
 title: "Lab 1: Introduction to Quarto"
 author: "Oli Lane"
 date: "9/26/2024"
-format: html
+format:
+  html:
+    theme: darkly
+    code-fold: true
+    toc: true
 editor: source
 embed-resources: true
 execute:
@@ -85,7 +89,7 @@ Now, run this code chunk! You should see two side-by-side boxplots, one plot com
 
 **Question 10/11**
 
-## Analyzing Vitamin C delivery methods
+## Analyzing Vitamin C Delivery Methods
 
 ```{r}
 #| echo: true
