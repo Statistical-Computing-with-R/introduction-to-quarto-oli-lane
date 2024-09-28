@@ -12,6 +12,7 @@ embed-resources: true
 execute:
   echo: true
   error: true
+  warning: false
 ---
 
 # Part Two: Exploring Quarto Documents
